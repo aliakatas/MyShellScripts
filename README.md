@@ -8,5 +8,5 @@ Check how command-line arguments are received from different scripts. Supports b
 Reduce the size of a jpg image file using Imagemagick library on linux/mac.
 
 ## Extract audio
-Extract audio from mkv/mp4 video files on linux/mac.
+Extract audio from mkv/mp4 video files on linux/mac. Uses ffmpeg.
 
