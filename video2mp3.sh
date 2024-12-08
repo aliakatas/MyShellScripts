@@ -2,9 +2,10 @@
 
 targetFolder=./Audio/
 ftype=mp4    # could be mkv
+resolution=192k
 
 if [ ! -d "$targetFolder" ]; then
-   mkdir $targetFolder
+   mkdir -p $targetFolder
 fi
 
 for i in *.$ftype; do
@@ -12,5 +13,5 @@ for i in *.$ftype; do
     fbname=${fname%.*}
     outName="$fbname".mp3
 
-    ffmpeg -i "$fname" -b:a 160k $targetFolder"$outName"
+    ffmpeg -i "$fname" -b:a $resolution $targetFolder"$outName"
 done
